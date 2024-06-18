@@ -1,0 +1,790 @@
+/* General Styling */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.clear-fix{
+    clear: both;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Source Sans 3', sans-serif;
+    counter-reset: #333;
+
+}
+
+.container {
+    height: 100%;
+    padding: 0 15px ;
+    width: 970px;
+    margin: auto;
+    display: block;
+    
+    
+}
+/* ---------------------------------------------------------------------End of general styling------------------------------------------- */
+.home .nav{
+    background: rgba(0, 0, 0, 0.8);
+
+    transition: 1s ease-in-out;
+}
+.nav .row .logo{
+    float: left;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+  
+}
+
+.nav .row .logo a{
+    text-decoration: none;
+    color:#ff305b ;
+    font-size: 24px;
+    font-weight: 800;
+    transition: all;
+
+   
+}
+
+.nav .row{
+    width: 65%;
+    margin: auto;
+    overflow: auto;
+}
+
+.nav .nav-menu ul{
+    float: right;
+    list-style-type: none;
+    font-size: 18px;
+}
+
+.nav .row .nav-menu ul li{
+        float: left;
+        padding: 20px 10px ;
+       
+}
+
+.nav .row .nav-menu a{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: white ;
+    font-size: 16px;
+    font-weight: 300;
+    overflow: auto;
+    letter-spacing: 0.5px;
+    
+   
+}
+.nav .row .nav-menu a:hover {
+    color:#ff305b ; 
+}
+
+
+/* -------------------------------------------------------------------- Home Section styiling --------------------------------------------- */
+
+.home {
+    background-image: url(./Images/hero\ img.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center ;
+    color: white; 
+    text-align: center;
+    overflow: hidden;
+}
+
+
+
+.home .caption {
+
+    background: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    padding: 250px;
+
+    height: 100%;
+
+
+
+}
+
+.home .caption h3{
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+
+}
+
+
+.home .caption h1{
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #ff305b;
+    margin-bottom: 10px;
+    animation-name: fa;
+}
+
+.home .caption h4{
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 26px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    color: white;
+    margin-bottom: 10px;
+    animation-name: fa;
+}
+
+
+/* ------------------------------------------------------------------------About Area------------------------------------------------ */
+
+.about{
+    height: 100vh;
+    padding: 70px 0px ;
+    transition: all;
+    transition-duration: 1s;
+}
+
+
+
+.about .container .row .item{
+    width: 33.3333%;
+    float: left;
+    margin-left: 8.33333%;
+    padding: 0 15px;
+    overflow: hidden;
+}
+
+
+.about .container .row .item2{
+    width: 58.3333%;
+    float: left;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    line-height:25px;
+    font-weight: 400;
+    
+}
+.about .container .row{
+    margin: 0 -15px;
+    display: block;
+
+}
+.about .container .row .image{
+    border: 5px solid #555555;
+    border-radius: 5px;
+    margin: 0 15px;
+    display: block;
+    position: relative;
+
+}
+
+.about .container .row .item .image img{
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 15px;
+    left: 15px;
+  
+}
+
+ .img-hov {
+    height: 100%;
+    position: absolute;
+    left: 15px;
+    right: -15px;
+    bottom: -100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 0.5s ease-in-out;
+}
+
+
+
+.about .container .row .item:hover .img-hov {
+
+        bottom: -15px;
+    }
+
+.about .container .row .item .img-hov {
+    margin: auto;
+    text-align: center;
+    padding: 40% 0;
+}
+
+.
+.about .container .row .item .img-hov a{
+    float: left;
+    vertical-align: middle;
+
+}
+.about .container .row .item .img-hov img{
+    width: 20px;
+    background-color: #ff305b;
+    border-radius: 50%;
+    margin: 3px;
+
+}
+
+
+
+.about .container .row .hello{
+    padding-left: 70px;
+    width: 100%;
+
+} 
+.about .container .row .hello h2{
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 34px;
+    font-weight: 600;
+    position: relative;
+    line-height: 22px;
+    padding-left: 13px;
+    margin-bottom: 18px;
+    position: relative;
+}
+
+.about .container .row .hello h2::after{
+    content: "";
+    height: 100%;
+    width: 4px;
+    background-color: #ff305b;
+    position: absolute;
+    left: 0;
+    /* top: 50%; */
+    vertical-align: middle;
+}
+
+.about .container .row .hello p{
+        border-bottom: 1px dashed #999999;
+        margin-bottom: 25px;
+        padding-bottom: 25px;
+        
+    
+}
+
+
+.about .container .row .hello .person-data ul li {
+    float: left;
+    width: 50%;
+    margin-bottom: 25px;
+    display: table;
+    list-style: none;
+ 
+}
+
+.about .container .row .hello .person-data span{
+    color: #333333;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.about .container .row .hello .person-data a{
+    text-decoration: none;
+}
+
+.about .container .row .hello .person-data .btn a{
+    background: #ff305b none repeat scroll 0 0;
+    border-radius: 4px;
+    color: #ffffff;
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px 24px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.about .container .row .hello .person-data .btn a:hover{
+    background-color: #EC2403;
+
+}
+/* -----------------------------------------------services ---------------------------- */
+.services{
+    height: 50vh;
+    background: #f1f1f1;
+    text-align: center;
+    padding: 80px 0 34px;
+}
+
+.services .row {
+    display: block;
+}
+
+.services .row h2{
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 30px;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    position: relative;
+    text-transform: capitalize;
+    position: relative;
+
+}
+
+.services .row .single-service {
+    float: left;
+    width: 25%;
+}
+
+.services .row .single-service:hover {
+    position: relative;
+    z-index: 3;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.19);
+    background-color: #fff;
+    z-index: 3;
+  }
+
+
+  .services .row .single-service:hover i {
+    transform: scale(1.2);
+  }
+  
+.services .row .single-service i{
+    font-size: 36px;
+}
+
+.services .row h2::before{
+    content: "";
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    border-color: #ff305b;
+    border-style: solid;
+    border-width: 1px 0;
+    bottom: 0;
+    padding: 4px 0 5px;
+    width: 70px;
+}
+.services .row h2::after{
+    content:"";
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    background-color: #ff305b;
+    bottom: 5px;
+    height: 1px;
+    width: 160px;
+    position: absolute;
+}
+
+/* ---------------------------------------------------portofollio----------------------------------------------------- */
+.portofolio {
+    height: 100vh;
+    text-align: center;
+    padding: 100px 0px;
+    display: block;
+
+}
+.portofolio .row {
+    
+}
+
+.portofolio .row .inner{
+    float: left;
+    width: 33.33333% ;
+    padding: 10px;
+    
+}
+
+
+.portofolio .row .inner img{
+    max-width: 100%;
+}
+
+
+.portofolio .row h2{
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 30px;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    position: relative;
+    text-transform: capitalize;
+    position: relative;
+
+}
+
+.portofolio .row h2::before{
+    content: "";
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    border-color: #ff305b;
+    border-style: solid;
+    border-width: 1px 0;
+    bottom: 0;
+    padding: 4px 0 5px;
+    width: 70px;
+}
+
+.portofolio .row h2::after{
+    content:"";
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    background-color: #ff305b;
+    bottom: 5px;
+    height: 1px;
+    width: 160px;
+    position: absolute;
+}
+
+.portofolio .row button{
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 3px 12px;
+    text-transform: uppercase;
+}
+.portofolio .try {
+    width: 90%;
+    margin: auto;
+}
+/* ---------------------------------------------------Counter---------------------------------------------------- */
+.counter{
+    height: 40vh;
+    background-color: #f1f1f1;
+    margin: auto;
+
+    padding: 10%;
+    text-align: center;
+}
+ .counter .count-item{
+    float: left;
+    width: 25%;
+ }
+/* -------------------------------------------------------------Feedback --------------------------- */
+
+.testimonial {
+    height: 70vh;
+    padding: 20px;
+    text-align: center;
+}
+
+.testimonial h2{
+    margin: 50px;
+    position: relative;
+    padding: 20px;
+    font-size: 40px;
+
+}
+
+
+.testimonial h2::before{
+    content: "";
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    border-color: #ff305b;
+    border-style: solid;
+    border-width: 1px 0;
+    bottom: 0;
+    padding: 4px 0 5px;
+    width: 70px;
+}
+.testimonial h2::after{
+    content:"";
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    background-color: #ff305b;
+    bottom: 5px;
+    height: 1px;
+    width: 160px;
+    position: absolute;
+}
+
+
+.inner-card {
+  background-color: #f1f1f1;
+  width: 70%;
+  margin: auto;
+  padding: 50px 50px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.card {
+  position: relative;
+}
+.card .image, .card .feedback {
+  float: left;
+}
+.card .image {
+  width: 20%;
+  position: relative;
+  z-index: 1;
+}
+.card .image::before {
+  content: '';
+  position: absolute;
+  top: -170px;
+  left: -150px;
+  background-color: #ff305b;
+  height: 300px;
+  width: 200px;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+.card .image img {
+  width: 80%;
+  border-radius: 50%;
+}
+.card .feedback {
+  width: 80%;
+}
+.card .feedback h3 {
+  color: #333;
+  font-size: 20px;
+}
+.card .feedback h4 {
+  color: #555555;
+  padding: 10px 0;
+  font-size: 14px;
+}
+.card .feedback p {
+  font-size: 14px;
+  color: #555555;
+  line-height: 1.5;
+}
+
+/* ----------------------------------------------------------------Our Blog----------------------------------------------------- */
+
+.our-blog {
+    height: 100vh;
+    padding: 10px;
+    text-align: center;
+}
+
+.our-blog h2{
+    margin: 50px;
+    position: relative;
+    padding: 20px;
+    font-size: 40px;
+
+}
+
+
+.our-blog h2::before{
+    content: "";
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    border-color: #ff305b;
+    border-style: solid;
+    border-width: 1px 0;
+    bottom: 0;
+    padding: 4px 0 5px;
+    width: 70px;
+}
+.our-blog h2::after{
+    content:"";
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    background-color: #ff305b;
+    bottom: 5px;
+    height: 1px;
+    width: 160px;
+    position: absolute;
+}
+
+
+.our-blog{
+    background-color: #f1f1f1;
+
+}
+.our-blog .container { 
+    width: 970px;
+    margin: auto;
+    display: block;
+    padding: 0 15px;
+    margin: auto;
+
+}
+
+.our-blog .container .item{ 
+    float: left;
+    width: 33.3333%;
+
+}
+
+
+.our-blog .container .item .inner{ 
+    background-color: #ffffff;
+    margin: 15px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+
+}
+
+.our-blog .container .item .inner .visual { 
+    
+height: auto;
+}
+.our-blog .container .item .inner .visual img{ 
+    width: 100%;
+
+
+}
+
+.our-blog .container .item .inner .visual iframe{ 
+    width: 100%;
+    height: 100%;
+}
+
+.our-blog .container .item .inner p{ 
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin: 0 0 10px;
+
+}
+
+
+.our-blog .container .item .date { 
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin-bottom: 10px;
+
+
+}
+
+
+.our-blog .container .item .inner h2{ 
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 19px;
+    font-weight: 600;
+    color: ;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.our-blog .container .item .inner .content{
+    padding: 12px;
+}
+
+/* -----------------------------------------------contact us ----------------- */
+
+
+.contact {
+    height: 100vh;
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+}
+
+.contact h2{
+    margin: 50px;
+    position: relative;
+    padding: 20px;
+    font-size: 40px;
+
+}
+
+
+.contact h2::before{
+    content: "";
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    border-color: #ff305b;
+    border-style: solid;
+    border-width: 1px 0;
+    bottom: 0;
+    padding: 4px 0 5px;
+    width: 70px;
+}
+.contact h2::after{
+    content:"";
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    background-color: #ff305b;
+    bottom: 5px;
+    height: 1px;
+    width: 160px;
+    position: absolute;
+}
+
+.contact .second-row input {
+    width: 85%;
+}
+
+
+.contact form  input {
+
+    width:40%;
+    margin-right: auto;
+    text-align: left;
+    margin: 10px;
+    padding: 3px;
+    display: inline;
+}
+
+.contact form {
+
+    width: 80%;
+    padding: 10px;
+    margin: auto;
+    text-align: left;
+}
+
+.contact textarea {
+    width: 86%;
+}
+
+.contact .btn {
+    width: 170px;
+    padding: 15px 24px;
+    border: none;
+    color: #fff;
+    background-color: #ff305b;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.footer {
+    background-color: #333333;
+    height: 30vh;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+
+
+}
+
+
+.footer span {
+    color: #ff305b;
+}
+.footer .container2 {
+    padding:70px 0 30px;
+}
+
+.footer .container2 img {
+    width: 20px;
+    background-color: #333;
+    margin: 5px;
+}
